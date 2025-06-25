@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PixelDrift</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #111;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      color: cyan;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: cyan;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      background: #000;
+    }
+
+    .hero-text {
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: cyan;
+      margin-bottom: 10px;
+    }
+
+    .typewriter {
+      font-size: 1.4rem;
+      color: #fff;
+      border-right: 2px solid cyan;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      animation: typing 4s steps(30, end) infinite, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      0% { width: 0 }
+      50% { width: 100% }
+      100% { width: 0 }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: cyan }
+    }
+
+    .hero img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.3);
+    }
+
+    .bio-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 40px;
+      background: #1c1c1c;
+      color: #e0e0e0;
+      flex-wrap: wrap;
+    }
+
+    .bio-left, .bio-right {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .about-logo {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      background-color: #000;
+      padding: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    }
+
+    .bio-right h2 {
+      color: cyan;
+      margin-bottom: 10px;
+    }
+
+    .bio-right p {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PixelDrift</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#PixelDrift">PixelDrift</a>
+      <a href="#bio">About</a>
+      <a href="tel:+916370899799">Contact</a>
+
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Mahesh Kumar Muduli</h1>
+      <div class="typewriter">Crafting Code & Creative Interfaces</div>
+      <p style="margin-top: 20px; color: #ccc;">
+       I turn ideas into interactive, user-first web experiences.
+      </p>
+    </div>
+    <img src="AiImage.png" alt="yourimage.png" />
+  </section>
+
+  <section class="bio-section" id="bio">
+    <div class="bio-left">
+      <!-- Replace 'mylogo.png' with your actual logo file path -->
+      <img src="AiImage2.png" alt="My Logo" class="about-logo" />
+    </div>
+    <div class="bio-right">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate frontend developer who loves mixing logic with aesthetics. Whether it's designing modern layouts or implementing interactive elements, I'm always excited to bring visions to life on the web.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    © 2025 PixelDrift
+  </footer>
+
+</body>
+</html>Gudu
